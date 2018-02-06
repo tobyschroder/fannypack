@@ -1,0 +1,38 @@
+/* z-index */
+@for $i from 1 through 100 {
+    .z-#{$i} {
+        z-index: #{$i}rem;
+    }
+}
+
+.z-200 {
+    z-index: 200;
+}
+
+.z-300 {
+    z-index: 300;
+}
+
+.z-400 {
+    z-index: 400;
+}
+
+.z-500 {
+    z-index: 500;
+}
+
+.z-1000 {
+    z-index: 999;
+}
+
+.z-max {
+    z-index: 21474836470;
+}
+
+.z-inherit {
+    z-index: inherit;
+}
+
+.z-unset {
+    z-index: unset;
+}
