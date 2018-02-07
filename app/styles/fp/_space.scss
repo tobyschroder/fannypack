@@ -1,8 +1,18 @@
 /* margin and padding */
 
+$spaceamounts: (1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 
+@each $space in $spaceamounts {
+  .mar-#{$space} {
+    margin: #{$space}rem;
+  }
 
-$spaceamounts: (1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100); // Adjust this to include the pixel amounts you need.
+  .pad-#{$space} {
+    padding: #{$space}rem;
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 $sides: (top, bottom, left, right);
 
 @each $space in $spaceamounts {

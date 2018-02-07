@@ -1,28 +1,11 @@
 /* z-index */
-@for $i from 1 through 100 {
-    .z-#{$i} {
-        z-index: #{$i}rem;
-    }
-}
 
-.z-200 {
-    z-index: 200;
-}
+$levelamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 99, 999);
 
-.z-300 {
-    z-index: 300;
-}
-
-.z-400 {
-    z-index: 400;
-}
-
-.z-500 {
-    z-index: 500;
-}
-
-.z-1000 {
-    z-index: 999;
+@each $level in $levelamounts {
+  .z-#{$level} {
+    z-index: #{$level};
+  }
 }
 
 .z-max {
